@@ -43,11 +43,11 @@ body {
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
-    height:100vh;
+    height:100%;
     margin:0px;
     padding:0px;
     text-transform:uppercase;
-    width:100vw;
+    width:100%;
 }
 
 /* Portrait layout (default) */

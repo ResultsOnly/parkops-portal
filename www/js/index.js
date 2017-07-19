@@ -35,9 +35,28 @@ var app = {
     onDeviceReady: function() {
       if (navigator.onLine) {
         document.getElementById('portalView').style.display = 'block';
+        var window_sizes = this.getWindowSizes;
+        document.getElementById('portalView').width = window_sizes[0];
+        document.getElementById('portalView').height = window_sizes[1];
         document.getElementById('appView').style.display = 'none';
       } else {
         var ref = window.open('offline.html', '_self', 'location=no');
       }
+    },
+    getWindowSizes: function() {
+      var windowHeight = 0, windowWidth = 0;
+      if (typeof (window.innerWidth) == 'number') {
+          windowHeight = window.innerHeight;
+          windowWidth = window.innerWidth;
+
+      } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+          windowHeight = document.documentElement.clientHeight;
+          windowWidth = document.documentElement.clientWidth;
+
+      } else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+         windowHeight = document.body.clientHeight;
+         windowWidth = document.body.clientWidth;
+      }
+      return [windowWidth, windowHeight];
     }
 };
