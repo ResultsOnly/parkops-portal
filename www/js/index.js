@@ -26,7 +26,7 @@ var app = {
             if (checkConnection()) {
               document.getElementById('portalView').style.display = 'block';
               document.getElementById('appView').style.display = 'none';
-              document.getElementById('portalFrame').src = 'https://portal.park-ops.com/portal/';
+              document.getElementById('portalFrame').src = document.getElementById('portalFrame').src;
             } else {
               var ref = window.open('offline.html', '_self', 'location=no');
             }
