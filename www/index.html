@@ -27,15 +27,13 @@
     </head>
     <body>
         <div id="appView" class="app" style="display:block;">
-          <h1><a href="https://portal.park-ops.com/portal/" target="portalFrame" onClick="document.getElementById('portalView').style.display = 'block';
-              document.getElementById('appView').style.display = 'none';">ParkOps Portal</a></h1>
+          <h1>ParkOps Portal</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
         </div>
-        <div id="portalView" class="portal" style="display:none; -webkit-overflow-scrolling: touch; 
- overflow: auto;" height="100vh" width="100vw">
+        <div id="portalView" class="portal" style="display:none;" height="100%" width="100%">
           <iframe id="portalFrame" src="https://portal.park-ops.com/portal/" height="100%" width="100%"></iframe>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
