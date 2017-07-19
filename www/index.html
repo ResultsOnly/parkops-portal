@@ -27,7 +27,8 @@
     </head>
     <body>
         <div id="appView" class="app" style="display:block;">
-          <h1><a onClick="loadSite();">ParkOps Portal</a></h1>
+          <h1><a href="https://portal.park-ops.com/portal/" target="portalFrame" onClick="document.getElementById('portalView').style.display = 'block';
+              document.getElementById('appView').style.display = 'none';">ParkOps Portal</a></h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
