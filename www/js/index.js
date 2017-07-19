@@ -34,8 +34,8 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
       if (navigator.onLine) {
-        document.getElementById('appView').style.display = 'none';
         document.getElementById('portalView').style.display = 'block';
+        document.getElementById('appView').style.display = 'none';
       } else {
         var ref = window.open('offline.html', '_self', 'location=no');
       }
