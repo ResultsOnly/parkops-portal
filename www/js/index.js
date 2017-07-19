@@ -25,8 +25,8 @@ var app = {
             console.log('Application Ready');
             if (checkConnection()) {
               document.getElementById('portalView').style.display = 'block';
-              document.getElementById('portalFrame').src = 'https://portal.park-ops.com/portal/';
               document.getElementById('appView').style.display = 'none';
+              document.getElementById('portalFrame').src = 'https://portal.park-ops.com/portal/';
             } else {
               var ref = window.open('offline.html', '_self', 'location=no');
             }
