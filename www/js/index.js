@@ -36,6 +36,7 @@ var app = {
       if (navigator.onLine) {
         document.getElementById('portalView').style.display = 'block';
         document.getElementById('appView').style.display = 'none';
+        document.getElementById('portalView').style.height = '100%';
       } else {
         var ref = window.open('offline.html', '_self', 'location=no');
       }
