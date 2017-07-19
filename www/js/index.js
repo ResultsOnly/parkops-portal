@@ -16,6 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+function loadSite() {
+  document.getElementById('appView').style.display = 'none';
+  document.getElementById('portalView').style.display = 'block';
+}
 var app = {
     // Application Constructor
     initialize: function() {
